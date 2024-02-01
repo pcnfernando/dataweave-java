@@ -18,8 +18,8 @@ public class Main {
     final static DataWeaveScriptingEngine dataWeaveScriptingEngine = new DataWeaveScriptingEngine();
 
     public static void main(String[] args) {
-        transform("/Users/chiran/Desktop/DW/src/resources/sample1.dwl",
-                "/Users/chiran/Desktop/DW/src/resources/input.json");
+        transform("src/resources/sample1.dwl",
+                "src/resources/input.json");
     }
     public static void transform(String dwFilePath, String dataModelPath) {
         try {
