@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
         transform("src/resources/sample1.dwl",
-                "src/resources/input.json");
+                "src/resources/input1.json");
     }
 
     public static void transform(String dwFilePath, String dataModelPath) {
