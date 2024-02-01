@@ -11,16 +11,18 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Main {
+
+    final static DataWeaveScriptingEngine dataWeaveScriptingEngine = new DataWeaveScriptingEngine();
     private static String readFile(String filePath) throws IOException {
         Path path = Paths.get(filePath);
         return Files.readString(path);
     }
-    final static DataWeaveScriptingEngine dataWeaveScriptingEngine = new DataWeaveScriptingEngine();
 
     public static void main(String[] args) {
         transform("src/resources/sample1.dwl",
                 "src/resources/input.json");
     }
+
     public static void transform(String dwFilePath, String dataModelPath) {
         try {
             String script = readFile(dwFilePath);
